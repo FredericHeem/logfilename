@@ -12,7 +12,7 @@ $ npm install --save logfilename
 ## Usage
 
 ```js
-var logfilename = require('logfilename');
+var Logfilename = require('logfilename');
 
 var options = {
   console: {
