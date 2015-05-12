@@ -1,17 +1,18 @@
 {
 	"name": "logfilename",
-	"version": "0.0.2",
+	"version": "0.0.4",
 	"description": "log filename with the winston logging library",
 	"homepage": "https://github.com/FredericHeem/logfilename",
 	"author": {
 		"name": "Frederic Heem",
 		"email": "frederic.heem@gmail.com"
 	},
-	"repository": "FredericHeem/logfilename",
+	"repository": {
+		"https://github.com/FredericHeem/logfilename.git",
+		"type": "git"
+	},
 	"license": "MIT",
-	"files": [
-		"src/logfilename.js"
-	],
+	"main": "src/logfilename.js",
 	"keywords": [
 		"logfilename",
 		"log logging winston filename"
