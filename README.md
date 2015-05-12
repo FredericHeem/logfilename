@@ -1,5 +1,5 @@
 
-> log filename with the winston logging library
+> Helper module to log filename, date/time  and colored severity with the [winston logging library](https://github.com/winstonjs/winston)
 
 
 ## Install
@@ -14,13 +14,35 @@ $ npm install --save logfilename
 ```js
 var logfilename = require('logfilename');
 
-logfilename('Rainbow');
+var options = {
+  console: {
+    level: 'debug',
+    timestamp: true,
+    colorize: true
+  },
+  file: {
+    filename: 'log.txt'
+  }
+};
+
+var logfilename = new Logfilename(options);
+var log = logfilename.get(__filename);
+
+log.debug('debug message');
+log.info('info message');
+log.error('error message');
+```
+
+## Test
+
+```sh
+$ npm test
 ```
 
 
 ## License
 
-MIT © [Frederic Heem]()
+MIT © [Frederic Heem](https://github.com/FredericHeem/)
 
 
 [npm-image]: https://badge.fury.io/js/logfilename.svg
