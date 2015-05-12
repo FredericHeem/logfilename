@@ -3,7 +3,7 @@
 var _ = require('lodash');
 var winston = require('winston');
 var path = require('path');
-var baseDir = path.resolve(__dirname, '..');
+var baseDir = path.resolve(__dirname, '../../../');
 
 // SETUP WINSTON LOGGER
 var container = new winston.Container();
