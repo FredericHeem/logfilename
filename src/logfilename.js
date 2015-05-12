@@ -30,7 +30,6 @@ function Log(options) {
 	};
 
 	var _options = _.merge(optionsDefault, options);
-	console.log(JSON.stringify(_options, null, 4));
 
 	Log.prototype.get = function(filename) {
 		var label = path.relative(baseDir, filename);
