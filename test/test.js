@@ -1,10 +1,49 @@
 'use strict';
 var assert = require('assert');
-var logfilename = require('../');
+var Logfilename = require('../src/logfilename.js');
 
-describe('logfilename node module', function () {
-  it('must have at least one test', function () {
-    logfilename();
-    assert(false, 'I was too lazy to write any tests. Shame on me.');
-  });
+describe('logfilename', function() {
+	it('no option', function() {
+		var options = {};
+		var logfilename = new Logfilename(options);
+		var log = logfilename.get(__filename);
+		assert(log);
+		log.debug("debug message");
+		log.info("info message");
+		log.error("error message");
+	});
+	it('console in info mode', function() {
+		var options = {
+			console: {
+				level: 'info',
+			}
+		};
+
+		var logfilename = new Logfilename(options);
+		var log = logfilename.get(__filename);
+		assert(log);
+		log.debug("debug message");
+		log.info("info message");
+		log.error("error message");
+	});
+
+	it('console and log file in debug mode', function() {
+		var options = {
+			console: {
+				level: 'debug',
+				timestamp: true,
+				colorize: true
+			},
+			file: {
+				filename: "log.txt"
+			}
+		};
+
+		var logfilename = new Logfilename(options);
+		var log = logfilename.get(__filename);
+		assert(log);
+		log.debug("debug message");
+		log.info("info message");
+		log.error("error message");
+	});
 });

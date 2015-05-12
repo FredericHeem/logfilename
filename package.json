@@ -1,6 +1,6 @@
 {
   "name": "logfilename",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "log filename with the winston logging library",
   "homepage": "https://github.com/FredericHeem/logfilename",
   "author": {
@@ -10,13 +10,16 @@
   "repository": "FredericHeem/logfilename",
   "license": "MIT",
   "files": [
-    "index.js"
+    "lib/logfilename.js"
   ],
   "keywords": [
     "logfilename",
     "log logging winston filename"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^3.8.0",
+    "winston": "^1.0.0"
+  },
   "devDependencies": {
     "grunt-cli": "^0.1.13",
     "grunt-contrib-jshint": "^0.11.0",
