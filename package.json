@@ -1,36 +1,36 @@
 {
-  "name": "logfilename",
-  "version": "0.0.2",
-  "description": "log filename with the winston logging library",
-  "homepage": "https://github.com/FredericHeem/logfilename",
-  "author": {
-    "name": "Frederic Heem",
-    "email": "frederic.heem@gmail.com"
-  },
-  "repository": "FredericHeem/logfilename",
-  "license": "MIT",
-  "files": [
-    "lib/logfilename.js"
-  ],
-  "keywords": [
-    "logfilename",
-    "log logging winston filename"
-  ],
-  "dependencies": {
-    "lodash": "^3.8.0",
-    "winston": "^1.0.0"
-  },
-  "devDependencies": {
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-jshint": "^0.11.0",
-    "grunt-contrib-nodeunit": "^0.4.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-mocha-cli": "^1.12.0",
-    "jshint-stylish": "^1.0.1",
-    "load-grunt-tasks": "^3.1.0",
-    "time-grunt": "^1.1.0"
-  },
-  "scripts": {
-    "test": "grunt"
-  }
+	"name": "logfilename",
+	"version": "0.0.2",
+	"description": "log filename with the winston logging library",
+	"homepage": "https://github.com/FredericHeem/logfilename",
+	"author": {
+		"name": "Frederic Heem",
+		"email": "frederic.heem@gmail.com"
+	},
+	"repository": "FredericHeem/logfilename",
+	"license": "MIT",
+	"files": [
+		"src/logfilename.js"
+	],
+	"keywords": [
+		"logfilename",
+		"log logging winston filename"
+	],
+	"dependencies": {
+		"lodash": "^3.8.0",
+		"winston": "^1.0.0"
+	},
+	"devDependencies": {
+		"grunt-cli": "^0.1.13",
+		"grunt-contrib-jshint": "^0.11.0",
+		"grunt-contrib-nodeunit": "^0.4.1",
+		"grunt-contrib-watch": "^0.6.1",
+		"grunt-mocha-cli": "^1.12.0",
+		"jshint-stylish": "^1.0.1",
+		"load-grunt-tasks": "^3.1.0",
+		"time-grunt": "^1.1.0"
+	},
+	"scripts": {
+		"test": "grunt"
+	}
 }
