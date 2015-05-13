@@ -39,15 +39,14 @@ log.error('error message');
 $ npm test
 ```
 
+## Continuous integration
+
+* Travis build: [![Build Status](https://travis-ci.org/FredericHeem/logfilename.svg?branch=master)](https://travis-ci.org/FredericHeem/logfilename)
+
+## Npm package
+
+[![npm version](https://badge.fury.io/js/logfilename.svg)](http://badge.fury.io/js/logfilename)
 
 ## License
 
 MIT © [Frederic Heem](https://github.com/FredericHeem/)
-
-
-[npm-image]: https://badge.fury.io/js/logfilename.svg
-[npm-url]: https://npmjs.org/package/logfilename
-[travis-image]: https://travis-ci.org/FredericHeem/logfilename.svg?branch=master
-[travis-url]: https://travis-ci.org/FredericHeem/logfilename
-[daviddm-image]: https://david-dm.org/FredericHeem/logfilename.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/FredericHeem/logfilename
