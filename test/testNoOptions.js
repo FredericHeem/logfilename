@@ -1,18 +1,24 @@
 'use strict';
 var assert = require('assert');
-var Logfilename = require('../src/logfilename.js');
 
 describe('logfilename', function() {
-	it('no option', function() {
-		var options = {};
-		var logfilename = new Logfilename(options);
-		var log = logfilename.get(__filename);
-		assert(log);
-		log.debug("debug message");
-		log.info("info message");
-		log.error("error message");
-	});
+  it('empty option', function() {
+    var logOptions = {};
+    var log = require('../src/logfilename.js')(__filename, logOptions);
 
+    assert(log);
+    log.debug("debug message");
+    log.info("info message");
+    log.error("error message");
+  });
+
+  it('no option', function() {
+    var log = require('../src/logfilename.js')(__filename);
+    assert(log);
+    log.debug("debug message");
+    log.info("info message");
+    log.error("error message");
+  });
 
 
 });
