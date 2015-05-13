@@ -41,6 +41,10 @@ $ npm test
 
 * Travis build: [![Build Status](https://travis-ci.org/FredericHeem/logfilename.svg?branch=master)](https://travis-ci.org/FredericHeem/logfilename)
 
+##Code climate
+
+[![Code Climate](https://codeclimate.com/github/FredericHeem/logfilename/badges/gpa.svg)](https://codeclimate.com/github/FredericHeem/logfilename)  [![Test Coverage](https://codeclimate.com/github/FredericHeem/logfilename/badges/coverage.svg)](https://codeclimate.com/github/FredericHeem/logfilename/coverage)
+
 ## Npm package
 
 [![npm version](https://badge.fury.io/js/logfilename.svg)](http://badge.fury.io/js/logfilename)
