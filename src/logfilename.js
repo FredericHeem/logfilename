@@ -18,27 +18,23 @@ container.add("exception", {
 container.get("exception").exitOnError = false;
 var keys = [];
 
-/**
-
-*/
+var optionsDefault = {
+  console: {
+    level: 'error',
+    timestamp: true,
+    colorize: true
+  }
+};
 
 function Log(label, options) {
-  var optionsDefault = {
-    console: {
-      level: 'error',
-      timestamp: true,
-      colorize: true
-    }
-  };
-
   if (path.extname(label) === ".js") {
     label = path.basename(label, '.js');
   }
 
-  var optionsWithDefaults = _.merge(optionsDefault, options);
+  optionsDefault = _.merge(optionsDefault, options);
 
   if (!_.contains(keys, label)) {
-    var optionsFinal = _.merge(optionsWithDefaults, {
+    var optionsFinal = _.merge(optionsDefault, {
       console: {
         label: label
       }
