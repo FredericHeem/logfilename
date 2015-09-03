@@ -15,7 +15,7 @@ container.add("exception", {
   }
 });
 
-container.get("exception").exitOnError = false;
+container.get("exception").exitOnError = true;
 var keys = [];
 
 var optionsDefault = {
