@@ -8,7 +8,7 @@ var path = require('path');
 var container = new winston.Container();
 container.add("exception", {
   console: {
-    handleExceptions: true,
+    handleExceptions: false,
     timestamp: true,
     label: "EXCEPTION",
     colorize: true
@@ -20,7 +20,7 @@ var keys = [];
 
 var optionsDefault = {
   console: {
-    level: 'error',
+    level: 'debug',
     timestamp: true,
     colorize: true
   }
