@@ -1,6 +1,6 @@
 {
 	"name": "logfilename",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "log filename, date/time and severity with the winston logging library",
 	"homepage": "https://github.com/FredericHeem/logfilename",
 	"author": {
