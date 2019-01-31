@@ -33,7 +33,7 @@ function Log(label, options) {
 
   optionsDefault = _.merge(optionsDefault, options);
 
-  if (!_.contains(keys, label)) {
+  if (!_.includes(keys, label)) {
     var optionsFinal = _.merge(optionsDefault, {
       console: {
         label: label
