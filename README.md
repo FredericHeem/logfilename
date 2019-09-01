@@ -47,7 +47,7 @@ $ npm test
 
 ## Npm package
 
-[![npm version](https://badge.fury.io/js/logfilename.svg)](http://badge.fury.io/js/logfilename)
+[![npm version](https://badge.fury.io/js/logfilename.svg)](http://badge.fury.io/js/logfilename) [![Greenkeeper badge](https://badges.greenkeeper.io/FredericHeem/logfilename.svg)](https://greenkeeper.io/)
 
 ## License
 
